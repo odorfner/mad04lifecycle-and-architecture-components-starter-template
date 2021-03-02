@@ -24,4 +24,6 @@
     <string name="quiz">Quiz</string>
     <string name="your_score">Your Score</string>
     <string name="default_score">0/0</string>
+
+    <string name="question_progress">Question %d/%d</string>
 </resources>

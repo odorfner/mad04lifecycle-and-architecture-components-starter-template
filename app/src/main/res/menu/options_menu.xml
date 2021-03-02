@@ -4,4 +4,7 @@
     <item
         android:id="@+id/watchlistFragment"
         android:title="@string/my_watchlist" />
+    <item
+        android:id="@+id/quizFragment"
+        android:title="@string/quiz" />
 </menu>

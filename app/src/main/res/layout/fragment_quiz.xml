@@ -7,6 +7,12 @@ xmlns:tools="http://schemas.android.com/tools"
 
     <data>
         <variable
+            name="index"
+            type="Integer" />
+        <variable
+            name="questionsCount"
+            type="Integer" />
+        <variable
             name="question"
             type="com.example.mad03_fragments_and_navigation.models.Question" />
     </data>
@@ -17,6 +23,17 @@ xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".QuizFragment">
+
+        <TextView
+            android:id="@+id/currentQuestionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@{String.format(@string/question_progress, index, questionsCount)}"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/questionText"
