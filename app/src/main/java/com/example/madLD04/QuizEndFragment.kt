@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.madLD04.databinding.FragmentQuizEndBinding
 
 
@@ -22,6 +24,10 @@ class QuizEndFragment : Fragment() {
         val args = QuizEndFragmentArgs.fromBundle(requireArguments())
         // show score
         binding.textView7.text = "${args.score}/${args.size}"
+        binding.restartBtn.setOnClickListener{view: View ->
+            view.findNavController().navigate(QuizEndFragmentDirections.actionQuizEndFragmentToQuizFragment())
+        }
+
         return binding.root
     }
 }
