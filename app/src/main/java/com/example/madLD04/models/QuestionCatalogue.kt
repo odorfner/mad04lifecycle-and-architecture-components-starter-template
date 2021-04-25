@@ -1,4 +1,4 @@
-package com.example.mad03_fragments_and_navigation.models
+package com.example.madLD04.models
 
 class QuestionCatalogue {
     val defaultQuestions = exampleCatalogue

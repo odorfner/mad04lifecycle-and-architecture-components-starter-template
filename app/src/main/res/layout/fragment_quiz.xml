@@ -14,7 +14,7 @@ xmlns:tools="http://schemas.android.com/tools"
             type="Integer" />
         <variable
             name="question"
-            type="com.example.mad03_fragments_and_navigation.models.Question" />
+            type="com.example.madLD04.models.Question" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,7 +29,7 @@ xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:text="@{String.format(@string/question_progress, index, questionsCount)}"
+            android:text="@{String.format(@string/question_progress, index+1, questionsCount)}"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"

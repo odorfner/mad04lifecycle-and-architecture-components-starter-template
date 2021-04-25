@@ -1,4 +1,4 @@
-package com.example.mad03_fragments_and_navigation
+package com.example.madLD04
 
 import org.junit.Test
 

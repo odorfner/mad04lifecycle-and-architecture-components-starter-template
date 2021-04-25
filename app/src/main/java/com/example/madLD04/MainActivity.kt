@@ -1,4 +1,4 @@
-package com.example.mad03_fragments_and_navigation
+package com.example.madLD04
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.example.mad03_fragments_and_navigation.databinding.ActivityMainBinding
+import com.example.madLD04.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController

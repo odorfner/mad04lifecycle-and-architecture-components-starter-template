@@ -8,7 +8,7 @@
 <data>
     <variable
         name="movie"
-        type="com.example.mad03_fragments_and_navigation.models.Movie" />
+        type="com.example.madLD04.models.Movie" />
 </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout

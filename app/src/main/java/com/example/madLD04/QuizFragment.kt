@@ -1,13 +1,15 @@
-package com.example.mad03_fragments_and_navigation
+package com.example.madLD04
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.example.mad03_fragments_and_navigation.databinding.FragmentQuizBinding
-import com.example.mad03_fragments_and_navigation.models.QuestionCatalogue
+import androidx.navigation.fragment.findNavController
+import com.example.madLD04.databinding.FragmentQuizBinding
+import com.example.madLD04.models.QuestionCatalogue
 
 
 class QuizFragment : Fragment() {
@@ -32,11 +34,32 @@ class QuizFragment : Fragment() {
     }
 
     private fun nextQuestion(){
-        // get selected answer
-        // check if is correct answer
-        // update score
-        // check if there are any questions left
-            // show next question OR
-            // navigate to QuizEndFragment
+        val checkedId: Int = binding.answerBox.checkedRadioButtonId
+        var answerIndex = 0
+
+        when (checkedId) {
+            R.id.answer1 -> answerIndex = 0
+            R.id.answer2 -> answerIndex = 1
+            R.id.answer3 -> answerIndex = 2
+            R.id.answer4 -> answerIndex = 3
+        }
+
+        if (questions[index].answers[answerIndex].isCorrectAnswer) {
+            score++
+            Log.i("score", score.toString())
+        }
+
+        index++
+
+        if (index < questions.size) {
+            binding.index = index
+            binding.question = questions[index]
+            binding.invalidateAll()
+            binding.answerBox.clearCheck()
+        } else {
+            findNavController().navigate(
+                QuizFragmentDirections.actionQuizFragmentToQuizEndFragment(score, questions.size)
+            )
+        }
     }
 }

@@ -1,4 +1,4 @@
-package com.example.mad03_fragments_and_navigation
+package com.example.madLD04
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

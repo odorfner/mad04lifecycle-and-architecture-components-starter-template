@@ -1,4 +1,4 @@
-package com.example.mad03_fragments_and_navigation
+package com.example.madLD04
 
 import android.os.Bundle
 import android.view.*
@@ -6,9 +6,9 @@ import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.example.mad03_fragments_and_navigation.adapters.MovieListAdapter
-import com.example.mad03_fragments_and_navigation.databinding.FragmentHomeBinding
-import com.example.mad03_fragments_and_navigation.models.MovieStore
+import com.example.madLD04.adapters.MovieListAdapter
+import com.example.madLD04.databinding.FragmentHomeBinding
+import com.example.madLD04.models.MovieStore
 
 
 class HomeFragment : Fragment() {

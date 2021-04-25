@@ -1,4 +1,4 @@
-package com.example.mad03_fragments_and_navigation.adapters
+package com.example.madLD04.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,11 +6,11 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.example.mad03_fragments_and_navigation.models.Movie
+import com.example.madLD04.models.Movie
 import androidx.recyclerview.widget.RecyclerView
-import com.example.mad03_fragments_and_navigation.HomeFragmentDirections
-import com.example.mad03_fragments_and_navigation.R
-import com.example.mad03_fragments_and_navigation.databinding.MovieItemBinding
+import com.example.madLD04.HomeFragmentDirections
+import com.example.madLD04.R
+import com.example.madLD04.databinding.MovieItemBinding
 
 
 class MovieListAdapter:

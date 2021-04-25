@@ -1,6 +1,6 @@
-package com.example.mad03_fragments_and_navigation.models
+package com.example.madLD04.models
 
-import com.example.mad03_fragments_and_navigation.R
+import com.example.madLD04.R
 
 data class MovieStore(val myMovies: MutableList<Movie> = mutableListOf()){
 

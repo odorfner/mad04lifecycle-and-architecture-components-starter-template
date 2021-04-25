@@ -1,4 +1,4 @@
-package com.example.mad03_fragments_and_navigation
+package com.example.madLD04
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
-import com.example.mad03_fragments_and_navigation.databinding.FragmentMovieDetailBinding
-import com.example.mad03_fragments_and_navigation.models.MovieStore
+import com.example.madLD04.databinding.FragmentMovieDetailBinding
+import com.example.madLD04.models.MovieStore
 
 class MovieDetailFragment : Fragment() {
     private lateinit var binding: FragmentMovieDetailBinding

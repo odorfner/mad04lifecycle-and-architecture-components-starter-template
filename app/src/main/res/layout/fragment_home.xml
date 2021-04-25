@@ -9,7 +9,7 @@
     <data>
         <variable
             name="movies"
-            type="com.example.mad03_fragments_and_navigation.models.MovieStore" />
+            type="com.example.madLD04.models.MovieStore" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
